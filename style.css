@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("./assets/todo.jpg");
+    background-size: cover;
+    font-family: "poppins", sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding-top: 50px;
+   
+}
+
+h1{
+    text-align: center;
+    color: whitesmoke;
+    margin: 0px;
+}
+
+form{
+    width: 60%;
+    height: 10vh;
+    box-sizing: border-box;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+form .todos-field{
+    width: 80%;
+    padding: 15px 0px 15px 50px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+ 
+}
+.todos-field::placeholder{
+   font-size: 1rem   
+}
+
+form .addButton{
+    width: 12%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+
+
+}
+
+.addButton:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 0.5S;
+}
+
+
+.todo_items_container{
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+  
+ 
+}
+
+.todo_items{
+    width: 100%;
+    padding: 15px 15px 15px 20px;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgb(57, 54, 54);
+    border-radius: 10px;
+}
+.completed::before{
+    content: "";
+    display: block;
+    position: relative;
+   top: 25px;
+   right: 10px;
+    border: 2px solid red;
+    width: 50%;
+    transition-duration: 10s;
+}
+
+
+p{
+    font-size: 1.5em;
+   padding-left: 50px;
+    width: 69%;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px grey;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+.fa{
+    padding: 10px 20px;
+    font-size: 15px;
+    border: 1px solid lightgray;
+    box-shadow: 1px 2px 3px grey;
+    margin-left:10px;
+   cursor: pointer;
+   border-radius: 8px;
+}
+
+
+.fa-check:hover, .fa-pencil-square-o:hover,.fa-trash:hover {
+    color: white;
+    transform: scale(1.2);
+    background: linear-gradient(to right, rgb(27, 182, 203),rgb(74, 0, 110),rgb(22, 21, 21));
+    transition-duration: 2s;
+    
+}
